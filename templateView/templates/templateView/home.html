@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load cache %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+     
+    {% cache 20 course %}
+    <h5> content 1</h5>
+    <h5> content 2</h5>
+    <h5> content 3</h5>
+    {% endcache %}
+    <h5> content 4</h5>
+    <h5> content 5</h5>
+    <h5> content 6</h5>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
